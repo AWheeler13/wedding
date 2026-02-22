@@ -1,0 +1,1157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Join us as Adam Bryce Wheeler & Madelynn Rose Perone celebrate their wedding on June 7, 2026 in San Gabriel, CA.">
+  <title>Adam & Madelynn — June 7, 2026</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+  <style>
+    /* ─── Custom Properties ─────────────────────────────────────── */
+    :root {
+      --color-ivory:       #FAF7F2;
+      --color-cream:       #F3EDE3;
+      --color-sage:        #8FAF8A;
+      --color-sage-mid:    #6E9469;
+      --color-sage-dark:   #4A6845;
+      --color-gold:        #C9A84C;
+      --color-gold-light:  #E8D5A3;
+      --color-charcoal:    #2E2E2E;
+      --color-white:       #FFFFFF;
+      --overlay-dark:      rgba(12, 10, 6, 0.42);
+      --font-serif:        'Playfair Display', Georgia, serif;
+      --font-elegant:      'Cormorant Garamond', Georgia, serif;
+      --font-sans:         'Lato', Arial, sans-serif;
+      --max-width:         1100px;
+      --nav-height:        68px;
+      --section-pad:       5rem 1.5rem;
+    }
+
+    /* ─── Reset ─────────────────────────────────────────────────── */
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      font-size: 16px;
+    }
+
+    body {
+      font-family: var(--font-sans);
+      color: var(--color-charcoal);
+      background-color: var(--color-ivory);
+      overflow-x: hidden;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    /* ─── Navigation ─────────────────────────────────────────────── */
+    nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1000;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 2rem;
+      height: var(--nav-height);
+      transition: background 0.4s ease, border-color 0.4s ease, backdrop-filter 0.4s ease;
+      border-bottom: 1px solid transparent;
+    }
+
+    nav.scrolled {
+      background: rgba(250, 247, 242, 0.95);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      border-bottom-color: rgba(201, 168, 76, 0.4);
+    }
+
+    .nav-monogram {
+      font-family: var(--font-serif);
+      font-style: italic;
+      font-size: 1.4rem;
+      color: var(--color-white);
+      letter-spacing: 0.05em;
+      transition: color 0.4s ease;
+      white-space: nowrap;
+    }
+
+    nav.scrolled .nav-monogram {
+      color: var(--color-sage-dark);
+    }
+
+    .nav-links {
+      display: flex;
+      list-style: none;
+      gap: 0.25rem;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+    }
+
+    .nav-links a {
+      font-family: var(--font-sans);
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: rgba(255, 255, 255, 0.92);
+      padding: 0.4rem 0.7rem;
+      border-radius: 2px;
+      transition: color 0.3s ease;
+    }
+
+    nav.scrolled .nav-links a {
+      color: var(--color-sage-dark);
+    }
+
+    .nav-links a:hover {
+      color: var(--color-gold);
+    }
+
+    nav.scrolled .nav-links a:hover {
+      color: var(--color-gold);
+    }
+
+    /* ─── Hero ───────────────────────────────────────────────────── */
+    #hero {
+      position: relative;
+      min-height: 100dvh;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 6rem 1.5rem 4rem;
+      background-color: var(--color-sage-dark);
+      background-image: url('proposal.jpg');
+      background-size: cover;
+      background-position: center center;
+      background-attachment: fixed;
+      color: var(--color-white);
+    }
+
+    #hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: var(--overlay-dark);
+      z-index: 0;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 1;
+      max-width: 820px;
+      width: 100%;
+    }
+
+    .hero-label {
+      font-family: var(--font-elegant);
+      font-style: italic;
+      font-size: clamp(1rem, 2.5vw, 1.3rem);
+      font-weight: 300;
+      letter-spacing: 0.2em;
+      color: var(--color-gold-light);
+      margin-bottom: 0.8rem;
+      text-transform: uppercase;
+    }
+
+    .hero-names {
+      font-family: 'Great Vibes', cursive;
+      font-size: clamp(2.6rem, 7vw, 5.8rem);
+      font-weight: 400;
+      line-height: 1.3;
+      letter-spacing: 0.01em;
+      color: var(--color-white);
+      margin-bottom: 0.5rem;
+      white-space: nowrap;
+    }
+
+    .ampersand {
+      font-style: italic;
+      font-weight: 400;
+      color: var(--color-gold);
+      font-size: 1.15em;
+    }
+
+    .hero-date {
+      font-family: var(--font-elegant);
+      font-size: clamp(1.1rem, 2.8vw, 1.6rem);
+      font-weight: 300;
+      letter-spacing: 0.15em;
+      color: rgba(255, 255, 255, 0.88);
+      margin-bottom: 1.8rem;
+    }
+
+    /* ─── SVG Floral Divider ─────────────────────────────────────── */
+    .floral-divider {
+      display: block;
+      margin: 0 auto 2rem;
+      width: clamp(160px, 35vw, 280px);
+      height: auto;
+    }
+
+    .floral-divider-dark {
+      display: block;
+      margin: 0 auto 2rem;
+      width: clamp(140px, 30vw, 240px);
+      height: auto;
+    }
+
+    /* ─── Countdown Timer ────────────────────────────────────────── */
+    #countdown {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      flex-wrap: nowrap;
+      margin-bottom: 2.5rem;
+    }
+
+    .countdown-unit {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background: rgba(255, 255, 255, 0.14);
+      border: 1px solid rgba(201, 168, 76, 0.5);
+      border-radius: 8px;
+      padding: clamp(0.6rem, 2vw, 1rem) clamp(0.8rem, 2.5vw, 1.4rem);
+      backdrop-filter: blur(6px);
+      -webkit-backdrop-filter: blur(6px);
+      min-width: clamp(56px, 14vw, 90px);
+    }
+
+    .countdown-number {
+      font-family: var(--font-serif);
+      font-size: clamp(2rem, 6vw, 4rem);
+      font-weight: 600;
+      line-height: 1;
+      color: var(--color-white);
+      display: block;
+    }
+
+    .countdown-number.flip {
+      animation: flipIn 0.35s ease forwards;
+    }
+
+    .countdown-label {
+      font-family: var(--font-sans);
+      font-size: clamp(0.55rem, 1.5vw, 0.68rem);
+      font-weight: 700;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--color-gold-light);
+      margin-top: 0.35rem;
+    }
+
+    .celebration {
+      font-family: var(--font-serif);
+      font-style: italic;
+      font-size: clamp(1.8rem, 5vw, 3rem);
+      color: var(--color-gold-light);
+    }
+
+    /* ─── Scroll Chevron ─────────────────────────────────────────── */
+    .scroll-chevron {
+      display: inline-flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.2rem;
+      color: rgba(255,255,255,0.6);
+      cursor: pointer;
+      animation: bounce 1.8s ease-in-out infinite;
+      transition: color 0.2s;
+    }
+
+    .scroll-chevron:hover {
+      color: var(--color-gold-light);
+    }
+
+    .scroll-chevron svg {
+      width: 28px;
+      height: 28px;
+    }
+
+    /* ─── Sections (shared) ──────────────────────────────────────── */
+    section {
+      padding: var(--section-pad);
+    }
+
+    .section-inner {
+      max-width: var(--max-width);
+      margin: 0 auto;
+    }
+
+    .section-heading {
+      font-family: var(--font-serif);
+      font-size: clamp(1.8rem, 4vw, 2.8rem);
+      font-weight: 600;
+      color: var(--color-sage-dark);
+      text-align: center;
+      margin-bottom: 0.5rem;
+    }
+
+    .section-subheading {
+      font-family: var(--font-elegant);
+      font-style: italic;
+      font-size: clamp(1rem, 2.5vw, 1.25rem);
+      font-weight: 300;
+      color: var(--color-sage-mid);
+      text-align: center;
+      margin-bottom: 2.5rem;
+    }
+
+    /* ─── Details Section ────────────────────────────────────────── */
+    #details {
+      background: var(--color-ivory);
+    }
+
+    .cards-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      margin-top: 1rem;
+    }
+
+    .card {
+      background: var(--color-white);
+      border-top: 4px solid var(--color-gold);
+      border-radius: 4px;
+      padding: 2.5rem 2rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      box-shadow: 0 4px 20px rgba(74, 104, 69, 0.08);
+      transition: transform 0.28s ease, box-shadow 0.28s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 32px rgba(74, 104, 69, 0.14);
+    }
+
+    .card-icon {
+      width: 48px;
+      height: 48px;
+      color: var(--color-sage-mid);
+      margin-bottom: 1.2rem;
+    }
+
+    .card h2 {
+      font-family: var(--font-serif);
+      font-size: 1.6rem;
+      font-weight: 600;
+      color: var(--color-sage-dark);
+      margin-bottom: 0.5rem;
+    }
+
+    .card-time {
+      font-family: var(--font-elegant);
+      font-size: 1.15rem;
+      font-style: italic;
+      color: var(--color-gold);
+      margin-bottom: 0.6rem;
+    }
+
+    .card-venue {
+      font-family: var(--font-sans);
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--color-charcoal);
+      margin-bottom: 0.4rem;
+    }
+
+    .card-address {
+      font-family: var(--font-sans);
+      font-size: 0.9rem;
+      font-weight: 300;
+      color: #666;
+      line-height: 1.5;
+      transition: color 0.2s;
+    }
+
+    .card-address:hover {
+      color: var(--color-sage-dark);
+    }
+
+    /* ─── Placeholder Sections ───────────────────────────────────── */
+    #hotels {
+      background: var(--color-cream);
+    }
+
+    #dress-code {
+      background: var(--color-ivory);
+    }
+
+    .placeholder-text {
+      font-family: var(--font-elegant);
+      font-style: italic;
+      font-size: 1.1rem;
+      font-weight: 300;
+      color: var(--color-sage-mid);
+      text-align: center;
+      margin-top: 0.5rem;
+    }
+
+    /* ─── Hotel Cards ────────────────────────────────────────────── */
+    .hotel-cards-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      margin-top: 1rem;
+    }
+
+    .hotel-card {
+      background: var(--color-white);
+      border-top: 4px solid var(--color-sage);
+      border-radius: 4px;
+      padding: 2rem 2rem 1.8rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      box-shadow: 0 4px 20px rgba(74, 104, 69, 0.08);
+      transition: transform 0.28s ease, box-shadow 0.28s ease;
+    }
+
+    .hotel-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 32px rgba(74, 104, 69, 0.14);
+    }
+
+    .hotel-card h3 {
+      font-family: var(--font-serif);
+      font-size: 1.35rem;
+      font-weight: 600;
+      color: var(--color-sage-dark);
+      margin-bottom: 0.5rem;
+    }
+
+    .hotel-card-desc {
+      font-family: var(--font-sans);
+      font-size: 0.9rem;
+      font-weight: 300;
+      color: #666;
+      line-height: 1.6;
+      margin-bottom: 0.7rem;
+    }
+
+    .hotel-card-address {
+      font-family: var(--font-sans);
+      font-size: 0.85rem;
+      font-weight: 300;
+      color: #888;
+      line-height: 1.5;
+      margin-bottom: 1.4rem;
+      flex-grow: 1;
+    }
+
+    .btn-hotel {
+      display: inline-block;
+      padding: 0.55rem 1.8rem;
+      background: transparent;
+      color: var(--color-sage-dark);
+      font-family: var(--font-sans);
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      border-radius: 50px;
+      border: 1.5px solid var(--color-sage-mid);
+      transition: background 0.25s ease, color 0.25s ease, border-color 0.25s ease;
+    }
+
+    .btn-hotel:hover,
+    .btn-hotel:focus {
+      background: var(--color-sage-dark);
+      color: var(--color-white);
+      border-color: var(--color-sage-dark);
+      outline: none;
+    }
+
+    /* ─── Dress Code ─────────────────────────────────────────────── */
+    .dress-code-intro {
+      font-family: var(--font-elegant);
+      font-style: italic;
+      font-size: clamp(1rem, 2.5vw, 1.2rem);
+      font-weight: 300;
+      color: var(--color-sage-mid);
+      text-align: center;
+      max-width: 680px;
+      margin: 0 auto 2.5rem;
+      line-height: 1.7;
+    }
+
+    .dress-code-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .dress-code-panel {
+      background: var(--color-white);
+      border-top: 4px solid var(--color-gold);
+      border-radius: 4px;
+      padding: 2rem 2rem 2.2rem;
+      box-shadow: 0 4px 20px rgba(74, 104, 69, 0.07);
+    }
+
+    .dress-code-panel h3 {
+      font-family: var(--font-serif);
+      font-size: 1.4rem;
+      font-weight: 600;
+      color: var(--color-sage-dark);
+      margin-bottom: 1.2rem;
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+    }
+
+    .dress-code-panel h3 svg {
+      width: 22px;
+      height: 22px;
+      color: var(--color-gold);
+      flex-shrink: 0;
+    }
+
+    .dress-code-panel ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+
+    .dress-code-panel li {
+      font-family: var(--font-sans);
+      font-size: 0.9rem;
+      font-weight: 300;
+      color: var(--color-charcoal);
+      line-height: 1.6;
+      padding-left: 1.1rem;
+      position: relative;
+    }
+
+    .dress-code-panel li::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0.55em;
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      background: var(--color-gold);
+    }
+
+    /* ─── Ceremony Notes ─────────────────────────────────────────── */
+    .card-notes {
+      margin-top: 1.1rem;
+      padding-top: 1rem;
+      border-top: 1px solid rgba(201, 168, 76, 0.2);
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      width: 100%;
+    }
+
+    .card-note {
+      font-family: var(--font-sans);
+      font-size: 0.85rem;
+      font-weight: 400;
+      color: var(--color-sage-mid);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      line-height: 1.4;
+    }
+
+    .card-note svg {
+      width: 14px;
+      height: 14px;
+      flex-shrink: 0;
+      color: var(--color-gold);
+    }
+
+    /* ─── Reception Timeline ─────────────────────────────────────── */
+    .reception-timeline {
+      margin-top: 1.1rem;
+      padding-top: 1rem;
+      border-top: 1px solid rgba(201, 168, 76, 0.2);
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .timeline-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 1rem;
+      padding: 0.38rem 0;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    }
+
+    .timeline-row:last-child {
+      border-bottom: none;
+    }
+
+    .timeline-event {
+      font-family: var(--font-sans);
+      font-size: 0.85rem;
+      font-weight: 300;
+      color: var(--color-charcoal);
+      text-align: left;
+    }
+
+    .timeline-time {
+      font-family: var(--font-sans);
+      font-size: 0.82rem;
+      font-weight: 700;
+      color: var(--color-gold);
+      white-space: nowrap;
+      text-align: right;
+    }
+
+    /* ─── RSVP Section ───────────────────────────────────────────── */
+    #rsvp {
+      background: var(--color-sage-dark);
+      color: var(--color-white);
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    #rsvp::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='60' viewBox='0 0 60 60'%3E%3Ccircle cx='30' cy='30' r='1.5' fill='rgba(255,255,255,0.04)'/%3E%3C/svg%3E") repeat;
+      pointer-events: none;
+    }
+
+    .rsvp-inner {
+      position: relative;
+      z-index: 1;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    #rsvp .section-heading {
+      color: var(--color-white);
+      margin-bottom: 0.5rem;
+    }
+
+    #rsvp .section-subheading {
+      color: rgba(255,255,255,0.75);
+      margin-bottom: 2rem;
+    }
+
+    .btn-rsvp {
+      display: inline-block;
+      padding: 1rem 3.5rem;
+      background: var(--color-gold);
+      color: var(--color-charcoal);
+      font-family: var(--font-sans);
+      font-size: 0.9rem;
+      font-weight: 700;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      border-radius: 50px;
+      border: 2px solid var(--color-gold);
+      transition: background 0.28s ease, border-color 0.28s ease, color 0.28s ease, box-shadow 0.28s ease;
+    }
+
+    .btn-rsvp:hover,
+    .btn-rsvp:focus {
+      background: transparent;
+      color: var(--color-gold-light);
+      border-color: var(--color-gold-light);
+      box-shadow: 0 0 24px rgba(201, 168, 76, 0.35);
+      outline: none;
+    }
+
+    /* ─── Footer ─────────────────────────────────────────────────── */
+    footer {
+      background: #2c3e2c;
+      color: rgba(255, 255, 255, 0.6);
+      text-align: center;
+      padding: 2rem 1.5rem;
+    }
+
+    .footer-names {
+      font-family: var(--font-serif);
+      font-style: italic;
+      font-size: 1.3rem;
+      color: var(--color-gold-light);
+      margin-bottom: 0.4rem;
+    }
+
+    .footer-date {
+      font-family: var(--font-sans);
+      font-size: 0.8rem;
+      font-weight: 300;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    /* ─── Animate on Scroll ──────────────────────────────────────── */
+    .aos {
+      opacity: 0;
+      transform: translateY(28px);
+      transition: opacity 0.7s ease, transform 0.7s ease;
+    }
+
+    .aos.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* ─── Keyframes ──────────────────────────────────────────────── */
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50%       { transform: translateY(9px); }
+    }
+
+    @keyframes flipIn {
+      from { opacity: 0; transform: translateY(-10px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    /* ─── Reduced Motion ─────────────────────────────────────────── */
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation: none !important;
+        transition: none !important;
+      }
+      .aos { opacity: 1; transform: none; }
+    }
+
+    /* ─── Responsive ─────────────────────────────────────────────── */
+    @media (max-width: 640px) {
+      :root {
+        --section-pad: 3.5rem 1.2rem;
+        --nav-height: 56px;
+      }
+
+      #hero {
+        background-attachment: scroll;
+      }
+
+      nav {
+        padding: 0 1rem;
+        flex-wrap: wrap;
+        height: auto;
+        padding-top: 0.6rem;
+        padding-bottom: 0.6rem;
+        gap: 0.4rem;
+      }
+
+      .nav-links {
+        gap: 0;
+      }
+
+      .nav-links a {
+        font-size: 0.65rem;
+        padding: 0.3rem 0.5rem;
+        letter-spacing: 0.08em;
+      }
+
+      #countdown {
+        gap: 0.6rem;
+      }
+
+      .hero-names {
+        white-space: normal;
+        font-size: clamp(2rem, 9vw, 3rem);
+      }
+
+      .cards-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (min-width: 641px) and (max-width: 900px) {
+      #hero {
+        background-attachment: scroll;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ─── Navigation ─────────────────────────────────────────────── -->
+  <nav id="site-nav" aria-label="Site navigation">
+    <span class="nav-monogram">A <span style="color:var(--color-gold); font-style:normal;">&amp;</span> M</span>
+    <ul class="nav-links">
+      <li><a href="#details">Ceremony</a></li>
+      <li><a href="#details">Reception</a></li>
+      <li><a href="#hotels">Hotels</a></li>
+      <li><a href="#dress-code">Dress Code</a></li>
+      <li><a href="#rsvp">RSVP</a></li>
+    </ul>
+  </nav>
+
+  <!-- ─── Hero ───────────────────────────────────────────────────── -->
+  <section id="hero" aria-label="Wedding introduction">
+    <div class="hero-content">
+
+      <p class="hero-label">The Wedding of</p>
+
+      <h1 class="hero-names">
+        Adam Bryce Wheeler
+        <br>
+        <span class="ampersand">&amp;</span>
+        <br>
+        Madelynn Rose Perone
+      </h1>
+
+      <p class="hero-date">Sunday, June 7, 2026</p>
+
+      <!-- Floral Divider -->
+      <svg class="floral-divider" viewBox="0 0 280 28" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <line x1="0" y1="14" x2="108" y2="14" stroke="#C9A84C" stroke-width="0.8" stroke-opacity="0.7"/>
+        <line x1="172" y1="14" x2="280" y2="14" stroke="#C9A84C" stroke-width="0.8" stroke-opacity="0.7"/>
+        <!-- Central leaf motif -->
+        <path d="M140 4 C132 10, 128 16, 130 20 C133 24, 140 26, 140 26 C140 26, 147 24, 150 20 C152 16, 148 10, 140 4Z" fill="#C9A84C" fill-opacity="0.75"/>
+        <path d="M140 26 L140 4" stroke="#C9A84C" stroke-width="0.6" stroke-opacity="0.5"/>
+        <!-- Small side leaves -->
+        <path d="M122 14 C126 10, 130 10, 130 14 C130 18, 126 18, 122 14Z" fill="#C9A84C" fill-opacity="0.5"/>
+        <path d="M158 14 C154 10, 150 10, 150 14 C150 18, 154 18, 158 14Z" fill="#C9A84C" fill-opacity="0.5"/>
+        <!-- Tiny dots -->
+        <circle cx="112" cy="14" r="1.5" fill="#C9A84C" fill-opacity="0.6"/>
+        <circle cx="168" cy="14" r="1.5" fill="#C9A84C" fill-opacity="0.6"/>
+      </svg>
+
+      <!-- Countdown Timer -->
+      <div id="countdown" role="timer" aria-label="Countdown to the wedding">
+        <div class="countdown-unit">
+          <span class="countdown-number" id="cd-days">—</span>
+          <span class="countdown-label">Days</span>
+        </div>
+        <div class="countdown-unit">
+          <span class="countdown-number" id="cd-hours">—</span>
+          <span class="countdown-label">Hours</span>
+        </div>
+        <div class="countdown-unit">
+          <span class="countdown-number" id="cd-minutes">—</span>
+          <span class="countdown-label">Minutes</span>
+        </div>
+        <div class="countdown-unit">
+          <span class="countdown-number" id="cd-seconds">—</span>
+          <span class="countdown-label">Seconds</span>
+        </div>
+      </div>
+
+      <!-- Scroll Chevron -->
+      <a href="#details" class="scroll-chevron" aria-label="Scroll to details">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="6 9 12 15 18 9"/>
+        </svg>
+      </a>
+
+    </div>
+  </section>
+
+  <!-- ─── Ceremony & Reception Details ───────────────────────────── -->
+  <section id="details" aria-label="Event details">
+    <div class="section-inner">
+      <h2 class="section-heading">Join Us</h2>
+      <p class="section-subheading">Sunday, June 7, 2026 — San Gabriel, California</p>
+
+      <!-- Floral Divider (dark) -->
+      <svg class="floral-divider-dark" viewBox="0 0 240 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <line x1="0" y1="12" x2="90" y2="12" stroke="#C9A84C" stroke-width="0.8" stroke-opacity="0.5"/>
+        <line x1="150" y1="12" x2="240" y2="12" stroke="#C9A84C" stroke-width="0.8" stroke-opacity="0.5"/>
+        <path d="M120 3 C113 8, 110 14, 112 17 C115 21, 120 23, 120 23 C120 23, 125 21, 128 17 C130 14, 127 8, 120 3Z" fill="#C9A84C" fill-opacity="0.6"/>
+        <circle cx="96" cy="12" r="1.5" fill="#C9A84C" fill-opacity="0.5"/>
+        <circle cx="144" cy="12" r="1.5" fill="#C9A84C" fill-opacity="0.5"/>
+      </svg>
+
+      <div class="cards-grid">
+
+        <!-- Ceremony Card -->
+        <article class="card aos" aria-label="Ceremony details">
+          <!-- Church Icon -->
+          <svg class="card-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <line x1="24" y1="4" x2="24" y2="10"/>
+            <line x1="21" y1="7" x2="27" y2="7"/>
+            <path d="M8 48 V28 L24 16 L40 28 V48"/>
+            <rect x="18" y="34" width="12" height="14" rx="1"/>
+            <path d="M8 28 H40"/>
+          </svg>
+          <h2>Ceremony</h2>
+          <p class="card-time">3:00 PM</p>
+          <p class="card-venue">San Gabriel Community Church</p>
+          <a
+            class="card-address"
+            href="https://maps.google.com/?q=117+North+Pine+Street+San+Gabriel+CA"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Get directions to San Gabriel Community Church">
+            117 North Pine Street<br>San Gabriel, CA
+          </a>
+          <div class="card-notes">
+            <p class="card-note">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="12" cy="12" r="10"/>
+                <polyline points="12 6 12 12 16 14"/>
+              </svg>
+              Please be in your seats by 2:45 PM
+            </p>
+            <p class="card-note">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <rect x="5" y="2" width="14" height="20" rx="2" ry="2"/>
+                <line x1="12" y1="18" x2="12.01" y2="18"/>
+                <line x1="2" y1="2" x2="22" y2="22"/>
+              </svg>
+              No phones during the ceremony, please
+            </p>
+          </div>
+        </article>
+
+        <!-- Reception Card -->
+        <article class="card aos" style="transition-delay: 0.15s;" aria-label="Reception details">
+          <!-- Champagne Icon -->
+          <svg class="card-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M18 4 H30 L34 20 C34 28 29 34 24 34 C19 34 14 28 14 20 Z"/>
+            <line x1="24" y1="34" x2="24" y2="44"/>
+            <line x1="17" y1="44" x2="31" y2="44"/>
+            <path d="M14 14 Q20 18 26 14"/>
+          </svg>
+          <h2>Reception</h2>
+          <p class="card-time">Following the Ceremony</p>
+          <p class="card-venue">San Gabriel Country Club</p>
+          <a
+            class="card-address"
+            href="https://maps.google.com/?q=350+East+Hermosa+Drive+San+Gabriel+CA"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Get directions to San Gabriel Country Club">
+            350 East Hermosa Drive<br>San Gabriel, CA
+          </a>
+          <div class="reception-timeline">
+            <div class="timeline-row">
+              <span class="timeline-event">Cocktails &amp; Hors d'oeuvres</span>
+              <span class="timeline-time">4:00 PM</span>
+            </div>
+            <div class="timeline-row">
+              <span class="timeline-event">Dinner</span>
+              <span class="timeline-time">5:30 PM</span>
+            </div>
+            <div class="timeline-row">
+              <span class="timeline-event">First Dances &amp; Speeches</span>
+              <span class="timeline-time">5:30–6:00 PM</span>
+            </div>
+            <div class="timeline-row">
+              <span class="timeline-event">Dance Floor Opens</span>
+              <span class="timeline-time">7:00–9:00 PM</span>
+            </div>
+            <div class="timeline-row">
+              <span class="timeline-event">Cake Cutting</span>
+              <span class="timeline-time">8:00 PM</span>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── Hotel Recommendations ───────────────────────────────────── -->
+  <section id="hotels" aria-label="Hotel recommendations">
+    <div class="section-inner">
+      <h2 class="section-heading aos">Hotel Recommendations</h2>
+      <p class="section-subheading aos" style="transition-delay:0.05s;">Convenient options for out-of-town guests in San Gabriel</p>
+
+      <div class="hotel-cards-grid">
+
+        <!-- Hilton -->
+        <article class="hotel-card aos" style="transition-delay:0.1s;" aria-label="Hilton Los Angeles San Gabriel">
+          <h3>Hilton Los Angeles/San Gabriel</h3>
+          <p class="hotel-card-desc">A full-service 4-star hotel with an outdoor pool, rooftop terrace, fitness center, and on-site dining. One of the most convenient options for wedding guests.</p>
+          <p class="hotel-card-address">225 W Valley Blvd<br>San Gabriel, CA 91776</p>
+          <a class="btn-hotel" href="https://www.hilton.com/en/hotels/laxsghf-hilton-los-angeles-san-gabriel/" target="_blank" rel="noopener noreferrer">View Hotel</a>
+        </article>
+
+        <!-- Sheraton -->
+        <article class="hotel-card aos" style="transition-delay:0.2s;" aria-label="Sheraton Los Angeles San Gabriel">
+          <h3>Sheraton Los Angeles San Gabriel</h3>
+          <p class="hotel-card-desc">A beautifully renovated 4-star Marriott property with an outdoor pool, spa, fitness center, and OPAL Chinese Cuisine on-site. Modern and elegant.</p>
+          <p class="hotel-card-address">303 E Valley Blvd<br>San Gabriel, CA 91776</p>
+          <a class="btn-hotel" href="https://www.marriott.com/en-us/hotels/lgbfp-sheraton-los-angeles-san-gabriel/overview/" target="_blank" rel="noopener noreferrer">View Hotel</a>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── Dress Code ──────────────────────────────────────────────── -->
+  <section id="dress-code" aria-label="Dress code">
+    <div class="section-inner">
+      <h2 class="section-heading aos">Dress Code</h2>
+      <p class="dress-code-intro aos" style="transition-delay:0.1s;">
+        Please dress in traditional wedding attire — suits, gowns, cocktail dresses, and formal separates are all welcome.
+        The following are the San Gabriel Country Club's dress code requirements for all guests.
+      </p>
+
+      <div class="dress-code-grid">
+
+        <!-- Men -->
+        <div class="dress-code-panel aos" style="transition-delay:0.15s;">
+          <h3>
+            <!-- Tie icon -->
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M12 2 L9 8 L11 20 L12 22 L13 20 L15 8 Z"/>
+              <path d="M9 8 L15 8"/>
+            </svg>
+            Men
+          </h3>
+          <ul>
+            <li>Shirts must be tucked in unless straight-cut or designed to be worn untucked. Mock turtleneck collars are accepted.</li>
+            <li>Shorts must be no shorter than 4&Prime; above the center of the back of the knee.</li>
+            <li>Hats and visors must be removed while inside any area of the Clubhouse. They are permitted outdoors (grill patio, lounge patio) and must be worn bill-forward.</li>
+            <li>No hoodies of any kind are permitted inside the Clubhouse, except in the pro shop, locker room, Men's Cardroom, Flagstone Patio, and Lounge Patio — and must be golf-specific, subject to Head Professional review.</li>
+          </ul>
+        </div>
+
+        <!-- Women -->
+        <div class="dress-code-panel aos" style="transition-delay:0.25s;">
+          <h3>
+            <!-- Dress icon -->
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M8 3 Q9 6 12 6 Q15 6 16 3"/>
+              <path d="M8 3 L5 10 L3 21 H21 L19 10 L16 3"/>
+              <path d="M5 10 H19"/>
+            </svg>
+            Women
+          </h3>
+          <ul>
+            <li>Dresses, blouses, skirts, tailored slacks, and Bermuda shorts are all welcome.</li>
+            <li>Shorts and skirts must be no shorter than fingertip length at rest.</li>
+            <li>Hats are permitted throughout the Clubhouse, provided they are not a cap or visor.</li>
+            <li>No hoodies of any kind are permitted inside the Clubhouse, except in the pro shop, locker room, Women's Cardroom, Flagstone Patio, and Lounge Patio — and must be golf-specific, subject to Head Professional review.</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── RSVP ────────────────────────────────────────────────────── -->
+  <section id="rsvp" aria-label="RSVP">
+    <div class="rsvp-inner">
+      <h2 class="section-heading aos">Will You Join Us?</h2>
+      <p class="section-subheading aos" style="transition-delay:0.1s;">We'd love to celebrate with you. Please let us know if you can make it.</p>
+
+      <!-- Floral Divider (on dark bg) -->
+      <svg class="floral-divider aos" style="margin-bottom:2rem; transition-delay:0.15s;" viewBox="0 0 200 22" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <line x1="0" y1="11" x2="76" y2="11" stroke="#C9A84C" stroke-width="0.7" stroke-opacity="0.5"/>
+        <line x1="124" y1="11" x2="200" y2="11" stroke="#C9A84C" stroke-width="0.7" stroke-opacity="0.5"/>
+        <path d="M100 2 C94 7, 92 13, 93 16 C95 19, 100 21, 100 21 C100 21, 105 19, 107 16 C108 13, 106 7, 100 2Z" fill="#C9A84C" fill-opacity="0.65"/>
+        <circle cx="80" cy="11" r="1.3" fill="#C9A84C" fill-opacity="0.5"/>
+        <circle cx="120" cy="11" r="1.3" fill="#C9A84C" fill-opacity="0.5"/>
+      </svg>
+
+      <a
+        class="btn-rsvp aos"
+        style="transition-delay:0.2s;"
+        href="https://docs.google.com/forms/d/e/1FAIpQLSdMIzrUZCtevyt3NZ5QBoFaevT4-NqDGHLr3M7zQmC7myv_6w/viewform?edit_requested=true"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="RSVP via Google Form">
+        RSVP Now
+      </a>
+    </div>
+  </section>
+
+  <!-- ─── Footer ──────────────────────────────────────────────────── -->
+  <footer>
+    <p class="footer-names">Adam &amp; Madelynn</p>
+    <p class="footer-date">June 7, 2026 &nbsp;·&nbsp; San Gabriel, California</p>
+  </footer>
+
+  <!-- ─── JavaScript ──────────────────────────────────────────────── -->
+  <script>
+    // ── Countdown Timer ──────────────────────────────────────────
+    // June 7, 2026 at 3:00 PM Pacific Daylight Time (UTC-7)
+    const WEDDING = new Date('2026-06-07T15:00:00-07:00');
+
+    function setUnit(id, value) {
+      const el = document.getElementById('cd-' + id);
+      const strVal = String(value);
+      if (el && el.textContent !== strVal) {
+        el.textContent = strVal;
+        el.classList.remove('flip');
+        void el.offsetWidth; // reflow to restart animation
+        el.classList.add('flip');
+      }
+    }
+
+    function updateCountdown() {
+      const now  = new Date();
+      const diff = WEDDING - now;
+
+      if (diff <= 0) {
+        const cd = document.getElementById('countdown');
+        if (cd) cd.innerHTML = '<p class="celebration">Today is the day! ✦</p>';
+        return;
+      }
+
+      const days    = Math.floor(diff / (1000 * 60 * 60 * 24));
+      const hours   = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+
+      setUnit('days',    String(days));
+      setUnit('hours',   String(hours).padStart(2, '0'));
+      setUnit('minutes', String(minutes).padStart(2, '0'));
+      setUnit('seconds', String(seconds).padStart(2, '0'));
+    }
+
+    updateCountdown();
+    setInterval(updateCountdown, 1000);
+
+    // ── Nav Scroll State ──────────────────────────────────────────
+    const nav = document.getElementById('site-nav');
+
+    window.addEventListener('scroll', function() {
+      nav.classList.toggle('scrolled', window.scrollY > 60);
+    }, { passive: true });
+
+    // ── Animate on Scroll (IntersectionObserver) ──────────────────
+    const observer = new IntersectionObserver(function(entries) {
+      entries.forEach(function(entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12 });
+
+    document.querySelectorAll('.aos').forEach(function(el) {
+      observer.observe(el);
+    });
+  </script>
+
+</body>
+</html>
